@@ -6,17 +6,18 @@ import { browserHistory, Router, Route, IndexRoute, Link, hashHistory} from "rea
 
 
 export interface RestaurantState{
-    name:string;
-    logoUrl:string;
-    address:string;
-    phone:string;
-    webSite:string;
+    Id:number;
+    Name:string;
+    LogoUrl:string;
+    Address:string;
+    Phone:string;
+    WebSite:string;
 
 }
 export class Restaurant extends React.Component<RestaurantState,{}>{
     render(){
         return(
-                       <article className="post-blog-list">
+                       <article className="post-blog-list" key={this.props.Id}>
                        
                                     <div className="blog-list-box">
                                     
@@ -24,21 +25,21 @@ export class Restaurant extends React.Component<RestaurantState,{}>{
                                             <a href="#">
                                                 <figure className="fit-img">
                                                     <div className="overlay-hover"></div>
-                                                    <img src={this.props.logoUrl} alt="blog list image" />
+                                                    <img src={this.props.LogoUrl} alt="blog list image" />
                                                 </figure>
                                             </a>
                                         </div>
                                         
                                         <div className="post-entry">
                                             <div className="blog-list-details">
-                                                <h2><a href="#">{this.props.name}</a></h2>
+                                                <h2><a href="#">{this.props.Name}</a></h2>
                                                 <div className="post-description">
-                                                    <p>{this.props.address}</p>
+                                                    <p>{this.props.Address}</p>
                                                 </div>
                                                 <div className="post-meta">
                                                     <ul>
-                                                        <li><a href="#">{this.props.phone}</a></li>
-                                                        <li><a href="#">{this.props.webSite}</a></li>
+                                                        <li><a href="#">{this.props.Phone}</a></li>
+                                                        <li><a href="#">{this.props.WebSite}</a></li>
                                                     </ul>
                                                 </div>
                                             </div>
