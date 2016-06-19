@@ -9,6 +9,11 @@
     },
     "files": [
         "./typings/tsd.d.ts",
-        "./src/App.tsx"
+        "./src/App.tsx",
+        "./src/Footer.tsx",
+        "./src/Header.tsx",
+        "./src/About.tsx",
+        "./src/Home.tsx",
+        "./src/Layout.tsx"
     ]
 }
