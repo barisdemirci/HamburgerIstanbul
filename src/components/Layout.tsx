@@ -1,3 +1,5 @@
+/// <reference path="../../typings/tsd.d.ts" />
+
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 import { browserHistory, Router, Route, IndexRoute, Link, hashHistory} from "react-router"

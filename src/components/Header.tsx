@@ -37,7 +37,7 @@ export class Header extends React.Component<{}, {}>{
                 <Link to="/Home">Blog</Link>
               </li>
               <li>
-                <Link to="/Home">Restaurantlar</Link>
+                <Link to="/Restaurants">Restaurantlar</Link>
 
               </li>
               <li>
